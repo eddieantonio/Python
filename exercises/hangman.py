@@ -133,7 +133,7 @@ while wrong < MAX_WRONG and so_far != word:
     used.append(guess)
 
     if guess in word:
-		print "Yes! %s is in the word" % guess
+		print "Yes! {0} is in the word".format(guess)
 
 		new = ""
 
@@ -146,10 +146,10 @@ while wrong < MAX_WRONG and so_far != word:
 		so_far = new
 
     else:
-        print "Sorry %s is NOT in the word." % guess
+        print "Sorry {0} is NOT in the word.".format(guess)
         wrong += 1
 
-    print "\nSo far, the word is: %s " % so_far
+    print "\nSo far, the word is: {0}".format(so_far)
     print "\nYou've used the following letters:\n", used
 
 
@@ -161,7 +161,7 @@ else:
 	print "You guessed it!"
 
 
-print "The word was %s" % word
+print "The word was {0}".format(word)
 
 
 
